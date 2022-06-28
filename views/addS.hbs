@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1f0ebad03f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="songstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input class="searchBox" type="text" placeholder="Artists, songs, or podcasts">
+            </div>
+            <div class="searchlogo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h3> Add songs</h3>
+            <form action="">
+                <label for="Song Name">Song Name</label>
+                <input type="text" placeholder="Enter Song Name" name="Sname" id="Sname" required>
+                <label for="Date Released">Date Released</label>
+                <input type="date" placeholder="Enter release date" name="date" id="date" required>
+                <label for="Artwork">Artwork</label>
+                <input type="file" name="image">
+                <input type="submit" placeholder="Artwork" name="Awork" id="Awork" required value="upload">
+                <label for="Artists">Artists</label>
+                <div class="multiselect">
+                    <div class="selectBox" onclick="showCheckboxes()">
+                        <select>
+                            <option>Select an option</option>
+                        </select>
+                        <div class="overSelect"></div>
+                    </div>
+                    <div id="checkboxes">
+                        <label for="one">
+                            <input type="checkbox" id="one" />First checkbox</label>
+                        <label for="two">
+                            <input type="checkbox" id="two" />Second checkbox</label>
+                        <label for="three">
+                            <input type="checkbox" id="three" />Third checkbox</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script>
+    var expanded = false;
+
+    function showCheckboxes() {
+        var checkboxes = document.getElementById("checkboxes");
+        if (!expanded) {
+            checkboxes.style.display = "block";
+            expanded = true;
+        } else {
+            checkboxes.style.display = "none";
+            expanded = false;
+        }
+    }
+</script>
+
+</html>

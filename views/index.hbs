@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <script src="https://kit.fontawesome.com/1f0ebad03f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input class="searchBox" type="text" placeholder="Artists, songs, or podcasts">
+            </div>
+            <div class="searchlogo">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Top 10 songs</h1>
+            <div class="addsongs">
+                <a href="/addS"> Add Songs</a>
+            </div>
+            <div class="topsongs">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Artwork</th>
+                            <th>Song</th>
+                            <th>DOR</th>
+                            <th>Artist</th>
+                            <th>Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>img:1</td>
+                            <td>Song 1</td>
+                            <td>Date</td>
+                            <td>name of artist</td>
+                            <td>
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                                        title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                                        title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                                        title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                                        title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                                        title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>img:2</td>
+                            <td>Song 2</td>
+                            <td>Date</td>
+                            <td>name of artist</td>
+                            <td>
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                                        title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                                        title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                                        title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                                        title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                                        title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>img:3</td>
+                            <td>Song 3</td>
+                            <td>Date</td>
+                            <td>name of artist</td>
+                            <td>
+                                <fieldset class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5"
+                                        title="Awesome - 5 stars"></label>
+                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label
+                                        class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4"
+                                        title="Pretty good - 4 stars"></label>
+                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label
+                                        class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3"
+                                        title="Meh - 3 stars"></label>
+                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label
+                                        class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2"
+                                        title="Kinda bad - 2 stars"></label>
+                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label
+                                        class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1"
+                                        title="Sucks big time - 1 star"></label>
+                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half"
+                                        for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1>Top 10 Artists</h1>
+            <div class="addsongs">
+                <a href="#"> Add Artists</a>
+            </div>
+            <div class="topsongs">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Artwork</th>
+                            <th>DOB</th>
+                            <th>songs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>name of artist</td>
+                            <td>Date</td>
+                            <td>Song 1</td>
+                        </tr>
+                        <tr>
+                            <td>name of artist</td>
+                            <td>Date</td>
+                            <td>Song 1</td>
+                        </tr>
+                        <tr>
+                            <td>name of artist</td>
+                            <td>Date</td>
+                            <td>Song 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-all-center">
+        <p>Copyright &copy; Sourav</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #045a22;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 3px;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(81, 210, 154);
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+
+.searchBox {
+    /* padding: 6px 48px; 
+border: 0;
+border-radius: 500px;
+height: 40px;
+width: 100%;
+margin: 0 50px
+*/
+    border: 0;
+    border-radius: 500px;
+    color: #000;
+    height: 40px;
+    padding: 6px 48px;
+    /* text-overflow: ellipsis; */
+    width: 270px;
+}
+
+.searchlogo {
+    display: flex;
+    left: 97px;
+    pointer-events: none;
+    position: absolute;
+    right: 11px;
+    top: 43px;
+    align-items: center;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+.multiselect {
+    width: 200px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
