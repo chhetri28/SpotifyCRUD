@@ -5,82 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/1f0ebad03f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="songstyle.css">
+    <title>Add</title>
+    {{!-- <link rel="stylesheet" href="style.css"> --}}
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-            </ul>
-            <div class="search">
-                <input class="searchBox" type="text" placeholder="Artists, songs, or podcasts">
-            </div>
-            <div class="searchlogo">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="form-style-2">
-                <div class="form-style-2-heading">Adding a new song</div>
-                <form action="" method="post">
-                    <label for="field1"><span>Song Name<span class="required">*</span></span><input type="text"
-                            class="input-field" name="field1" value="" /></label>
-                    <label for="field2"><span>Date Release <span class="required">*</span></span><input type="text"
-                            class="input-field" name="field2" value="" /></label>
-                    <label for="field3"><span>Artwork<span class="required">*</span></span><input type="file"
-                            name="image">
-                        <input type="submit" placeholder="Artwork" name="Awork" id="Awork" required
-                            value="upload"></label>
-                    <label for="field4"><span>Artists<span class="required">*</span></span>
-                        <div class="multiselect">
-                            <div class="selectBox" onclick="showCheckboxes()">
-                                <select>
-                                    <option>Select an option</option>
-                                </select>
-                                <div class="overSelect"></div>
-                            </div>
-                            <div id="checkboxes">
-                                <label for="one">
-                                    <input type="checkbox" id="one" />First checkbox</label>
-                                <label for="two">
-                                    <input type="checkbox" id="two" />Second checkbox</label>
-                                <label for="three">
-                                    <input type="checkbox" id="three" />Third checkbox</label>
-                            </div>
-                        </div>
-                        <ul class="addArtists">
-                            <li>
-                                <a href="#">Add Artists</a>
-                            </li>
-                        </ul>
-                    </label>
-                    <label><span> </span><input type="submit" value="Submit" /></label>
-                </form>
-            </div>
-        </div>
-    </main>
-</body>
-<script>
-    var expanded = false;
+    <div class="container">
+        <form action="/addsong">
+            <h3>ADD SONGS</h3>
 
-    function showCheckboxes() {
-        var checkboxes = document.getElementById("checkboxes");
-        if (!expanded) {
-            checkboxes.style.display = "block";
-            expanded = true;
-        } else {
-            checkboxes.style.display = "none";
-            expanded = false;
-        }
-    }
-</script>
+            <hr>
+
+            <label for="name"><b>Song name</b></label>
+            <input type="text" placeholder="Enter Name" name="sname" id="sname" required>
+
+            <label for="date"><b>Date</b></label>
+            <input type="date" placeholder="Enter date of release " name="dor" id="dor" required>
+            
+            <label for="Artist name"><b>Artist Name</b></label>
+            <input type="text" placeholder="Enter Artist name" name="aname" id="aname" required>
+
+
+
+            {{!-- <div class="gender_g">
+                <strong>Gender</strong>
+                <input type="radio" name="gender" id="" value="Male"> Male
+                <input type="radio" name="gender" id="" value="Female"> Female
+            </div> --}}
+            <button type="submit" class="registerbtn">ADD Song</button>
+
+
+            <a href="./" style="color:black">BACK TO HOME PAGE</a> <br>
+            {{#if mesg}}
+            <h3>Data Inserted</h3>
+            {{/if}}
+
+            {{#if checkmesg}}
+            <h3>Song present</h3>
+            {{/if}}
+        </form>
+    </div>
+</body>
 
 </html>
