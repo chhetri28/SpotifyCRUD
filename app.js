@@ -14,7 +14,6 @@ app.get("/addS",(req,res)=>{
     res.render("addS");
 });
 
-
 /*
 app.get("/addsong",(req,res)=>{
     const {sname,dor,aname}=req.query;
